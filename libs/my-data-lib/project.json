@@ -1,0 +1,27 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/my-data-lib/src",
+  "prefix": "flight-workspace",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/my-data-lib"
+      ],
+      "options": {
+        "jestConfig": "libs/my-data-lib/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/my-data-lib/**/*.ts",
+          "libs/my-data-lib/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -5,8 +5,9 @@ import {
   Tree,
 } from '@nrwl/devkit';
 
+// ng g lib
 import {
-  libraryGenerator
+  libraryGenerator,
 } from '@nrwl/angular/generators';
 
 import * as path from 'path';
@@ -17,7 +18,10 @@ export default async function (tree: Tree, options: MyPluginGeneratorSchema) {
 
   tree.write('demo.txt', 'Just a test!');
 
-  await libraryGenerator(tree, options);
+  await libraryGenerator(tree, {
+    ...options,
+    tags: 'a,b,c'
+  });
 
   const libsDir = getWorkspaceLayout(tree).libsDir;
   const projectRoot = `${libsDir}/${options.name}`;

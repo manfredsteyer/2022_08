@@ -8,13 +8,19 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2020",
     "module": "esnext",
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@flight-workspace/boarding/domain": [
+        "libs/boarding/domain/src/index.ts"
+      ],
+      "@flight-workspace/boarding/feature-manage": [
+        "libs/boarding/feature-manage/src/index.ts"
+      ],
       "@flight-workspace/dashboard-lib": ["libs/dashboard-lib/src/index.ts"],
       "@flight-workspace/flight-lib": ["libs/flight-lib/src/index.ts"],
       "@flight-workspace/logger-lib": ["libs/logger-lib/src/index.ts"],
@@ -25,6 +31,7 @@
       "@flight-workspace/luggage/feature-report-loss": [
         "libs/luggage/feature-report-loss/src/index.ts"
       ],
+      "@flight-workspace/my-data-lib": ["libs/my-data-lib/src/index.ts"],
       "@flight-workspace/my-plugin": ["libs/my-plugin/src/index.ts"],
       "@flight-workspace/passenger/domain": [
         "libs/passenger/domain/src/index.ts"
@@ -34,6 +41,9 @@
       ],
       "@flight-workspace/passenger/feature-search": [
         "libs/passenger/feature-search/src/index.ts"
+      ],
+      "@flight-workspace/shared/util-auth": [
+        "libs/shared/util-auth/src/index.ts"
       ]
     }
   },
