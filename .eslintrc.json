@@ -79,6 +79,10 @@
               {
                 "sourceTag": "domain:boarding",
                 "onlyDependOnLibsWithTags": ["domain:boarding", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:booking",
+                "onlyDependOnLibsWithTags": ["domain:booking", "domain:shared"]
               }
             ]
           }

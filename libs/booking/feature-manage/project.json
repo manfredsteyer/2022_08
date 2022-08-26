@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/booking/feature-manage/src",
+  "prefix": "booking",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/booking/feature-manage"],
+      "options": {
+        "jestConfig": "libs/booking/feature-manage/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/booking/feature-manage/**/*.ts",
+          "libs/booking/feature-manage/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["domain:booking", "type:feature"]
+}

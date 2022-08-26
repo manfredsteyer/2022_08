@@ -21,6 +21,10 @@
       "@flight-workspace/boarding/feature-manage": [
         "libs/boarding/feature-manage/src/index.ts"
       ],
+      "@flight-workspace/booking/domain": ["libs/booking/domain/src/index.ts"],
+      "@flight-workspace/booking/feature-manage": [
+        "libs/booking/feature-manage/src/index.ts"
+      ],
       "@flight-workspace/dashboard-lib": ["libs/dashboard-lib/src/index.ts"],
       "@flight-workspace/flight-lib": ["libs/flight-lib/src/index.ts"],
       "@flight-workspace/logger-lib": ["libs/logger-lib/src/index.ts"],
